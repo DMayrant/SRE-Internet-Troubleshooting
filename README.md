@@ -25,7 +25,7 @@ ifconfig en0,
 ipconfig getifaddr en0
 
 Local Network: 
-netstat -nr | grep default, 
+netstat -nr | grep default. ping gateway after 
 
 Internet: 
 ping -c 4 8.8.8.8,
