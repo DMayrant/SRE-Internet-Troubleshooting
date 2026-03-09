@@ -18,3 +18,24 @@ Layer                What You're Testing            Command
 3. Internet          Raw internet connectivity      ping 8.8.8.8
 4. DNS               Name resolution                nslookup, dig, host  google.com
 5. Application       Service-level connectivity     curl https://google.com
+
+
+device: 
+ifconfig en0
+ipconfig getifaddr en0
+
+Local Network: 
+netstat -nr | grep default 
+ping <ip-address>
+
+Internet: 
+ping -c 4 8.8.8.8
+ping -c 3 8.8.8.8
+
+DNS:
+nslookup google.com
+dig google.com +short
+host google.com 
+
+Application: 
+curl -I https://google.com 
