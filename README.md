@@ -20,21 +20,21 @@ Layer                What You're Testing            Command
 5. Application       Service-level connectivity     curl https://google.com
 
 
-device: 
+device 📱: 
 ifconfig en0,
 ipconfig getifaddr en0
 
-Local Network: 
+Local Network 🌐: 
 netstat -nr | grep default. ping gateway after 
 
-Internet: 
+Internet 🛜: 
 ping -c 4 8.8.8.8,
 ping -c 3 8.8.8.8
 
-DNS:
+DNS 🌎:
 nslookup google.com,
 dig google.com +short,
 host google.com 
 
-Application: 
+Application 📑: 
 curl -I https://google.com 
