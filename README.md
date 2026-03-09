@@ -25,16 +25,16 @@ ifconfig en0
 ipconfig getifaddr en0
 
 Local Network: 
-netstat -nr | grep default 
-ping <ip-address>
+netstat -nr | grep default,
+ping <gateway>
 
 Internet: 
-ping -c 4 8.8.8.8
+ping -c 4 8.8.8.8,
 ping -c 3 8.8.8.8
 
 DNS:
-nslookup google.com
-dig google.com +short
+nslookup google.com,
+dig google.com +short,
 host google.com 
 
 Application: 
