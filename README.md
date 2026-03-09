@@ -9,7 +9,7 @@ Internet connection downtime happens often. The goal is to minimize the blast ra
 - Containment of the blast radius and erradication
 - Post incident activity
 
-Internet Troubleshooting Layers
+Internet Troubleshooting Layers 🔌
 
 Layer                What You're Testing            Command
 
