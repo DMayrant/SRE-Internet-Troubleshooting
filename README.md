@@ -9,11 +9,12 @@ Internet connection downtime happens often. The goal is to minimize the blast ra
 - Containment of the blast radius and erradication
 - Post incident activity
 
-Internet Layers 🎛️
-Layer              Command 
+Internet Troubleshooting Layers
 
-Device             ifconfig, ipconfig 
-Local Network      ping gateway
-Internet           ping internet 
-DNS                nslookup, host, dig 
-Application        curl 
+Layer                What You're Testing            Command
+
+1. Device            Local network interface        ifconfig / ipconfig
+2. Local Network     Router / gateway connectivity  ping <gateway>
+3. Internet          Raw internet connectivity      ping 8.8.8.8
+4. DNS               Name resolution                nslookup, dig, host  google.com
+5. Application       Service-level connectivity     curl https://google.com
