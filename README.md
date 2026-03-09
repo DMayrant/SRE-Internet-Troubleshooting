@@ -21,12 +21,11 @@ Layer                What You're Testing            Command
 
 
 device: 
-ifconfig en0
+ifconfig en0,
 ipconfig getifaddr en0
 
 Local Network: 
-netstat -nr | grep default,
-ping <gateway>
+netstat -nr | grep default, 
 
 Internet: 
 ping -c 4 8.8.8.8,
