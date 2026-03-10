@@ -38,3 +38,17 @@ host google.com
 
 Application 📑: 
 curl -I https://google.com 
+
+Error Root Cause Analys (RCA) ⚠️
+
+Device = No IP address, Dynamic Host Communication Protocol (DHCP) issues, Wifi or Airplane Mode
+
+Network Layer = Router failure, ARP issue or subnet mismatch 
+
+Internet = ISP issues, NAT Gateway misconfiguration, WAN down 
+
+DNS = DNS resolver issues or misconfiguration, route 53 blocked
+
+Application = TLS error, firewall blocking port 443, loadbalancer issues, or server down 
+
+
